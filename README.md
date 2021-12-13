@@ -3,6 +3,8 @@
 
 Basic Ruby on Rails project based on crud operations and user authentication
 
+Hosted at <a href="https://railsfriends1234555.herokuapp.com/">https://railsfriends1234555.herokuapp.com/</a>
+
 <!-- This README would normally document whatever steps are necessary to get the
 application up and running.
 
