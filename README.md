@@ -1,5 +1,8 @@
 # README
 
+
+Basic Ruby on Rails project based on crud operations and user authentication
+
 <!-- This README would normally document whatever steps are necessary to get the
 application up and running.
 
