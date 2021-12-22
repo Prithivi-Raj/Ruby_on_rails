@@ -10,12 +10,14 @@ class FriendsController < ApplicationController
 
   # GET /friends/1 or /friends/1.json
   def show
+    puts "You are eligible to vote."
   end
 
   # GET /friends/new
   def new
     #friend = Friend.new
     @friend = current_user.friends.build
+    puts "You are eligible to vote."
   end
 
   # GET /friends/1/edit
@@ -26,6 +28,16 @@ class FriendsController < ApplicationController
   def create
     #friend = Friend.new(friend_params)
      @friend = current_user.friends.build(friend_params)
+#      iff = 20
+  
+# # Here 'if' and 'end' are keywords.  
+# # if condition to check whether  
+# # your age is enough for voting
+
+#     if iff >= 18
+#       puts "You are eligible to vote."
+#     end
+
 
     respond_to do |format|
       if @friend.save
@@ -65,7 +77,10 @@ class FriendsController < ApplicationController
     @friend = current_user.friends.find_by(id: params[:id])
     redirect_to friends_path, notice: "Not Authorized" if @friend.nil? 
 
+    
   end
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
